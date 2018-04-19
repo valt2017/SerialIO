@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simulator3", "simulator3.vcxproj", "{4142D356-7821-4D30-A32D-324C04D5A685}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4142D356-7821-4D30-A32D-324C04D5A685}.Debug|x86.ActiveCfg = Debug|Win32
+		{4142D356-7821-4D30-A32D-324C04D5A685}.Debug|x86.Build.0 = Debug|Win32
+		{4142D356-7821-4D30-A32D-324C04D5A685}.Release|x86.ActiveCfg = Release|Win32
+		{4142D356-7821-4D30-A32D-324C04D5A685}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66D8FB1D-121D-4413-A967-68F24A094135}
+	EndGlobalSection
+EndGlobal

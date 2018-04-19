@@ -1,0 +1,729 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Slovak (Slovakia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SKY)
+LANGUAGE LANG_SLOVAK, SUBLANG_DEFAULT
+#pragma code_page(1250)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CHECKED             BITMAP                  "res\\bmp00006.bmp"
+
+IDB_UNCHECKED           BITMAP                  "res\\bmp00007.bmp"
+
+IDB_OPEN                BITMAP                  "res\\bmp00001.bmp"
+
+IDB_NEW                 BITMAP                  "res\\bitmap2.bmp"
+
+IDB_BITMAP1             BITMAP                  "res\\bmp00002.bmp"
+
+IDB_SETTINGS            BITMAP                  "res\\bmp00005.bmp"
+
+IDB_ASCII               BITMAP                  "res\\bmp00008.bmp"
+
+IDB_COM                 BITMAP                  "res\\bmp00009.bmp"
+
+#endif    // Slovak (Slovakia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\simulator3.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""afxres.rc""         // Standardkomponenten\r\n"
+    "#include ""afxprint.rc""       // Ressourcen für Drucken/Seitenansicht\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG 0, 0, 321, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Com Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Open port",IDOK,254,66,50,14
+    PUSHBUTTON      "Exit dialog",IDCANCEL,254,47,50,14
+    GROUPBOX        "Port",IDC_STATIC,7,3,47,62
+    GROUPBOX        "Data bits",IDC_STATIC,55,3,37,62
+    CONTROL         "5",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,62,18,20,10
+    CONTROL         "6",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,62,29,20,10
+    CONTROL         "7",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,62,40,20,10
+    CONTROL         "8",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,62,51,20,10
+    GROUPBOX        "Stop bits",IDC_STATIC,93,3,41,62
+    CONTROL         "1",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,100,25,20,10
+    CONTROL         "1.5",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,100,35,26,10
+    CONTROL         "2",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,100,45,20,10
+    GROUPBOX        "Parity",IDC_STATIC,135,3,54,62
+    CONTROL         "None",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,141,13,33,10
+    CONTROL         "Even",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,141,23,33,10
+    CONTROL         "Odd",IDC_RADIO14,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,141,33,29,10
+    CONTROL         "Mark",IDC_RADIO15,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,141,43,32,10
+    CONTROL         "Space",IDC_RADIO16,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,141,53,37,10
+    GROUPBOX        "HW handshake",IDC_STATIC,191,3,61,37
+    CONTROL         "None",IDC_RADIO17,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,201,16,33,10
+    CONTROL         "RTS/CTS",IDC_RADIO18,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,201,27,48,10
+    GROUPBOX        "SW handshake",IDC_STATIC,254,3,59,37
+    CONTROL         "None",IDC_RADIO19,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,258,16,33,10
+    CONTROL         "Xon/Xoff",IDC_RADIO20,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,258,27,45,10
+    COMBOBOX        IDC_COMBO1,193,48,54,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT1,7,67,182,12,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "Close port",IDOK2,195,66,51,14,NOT WS_TABSTOP
+    LISTBOX         IDC_LIST1,11,14,38,45,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG3 DIALOG 0, 0, 237, 276
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ASCII table"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST3,7,7,223,262,NOT LBS_NOTIFY | LBS_USETABSTOPS | WS_TABSTOP
+END
+
+IDD_DIALOG2 DIALOG 0, 0, 129, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,76,50,14
+    LTEXT           "Version: 1.9",IDC_STATIC,13,36,77,10
+    LTEXT           "for testing purposes only",IDC_STATIC,13,24,77,10
+    LTEXT           "Serial port terminal",IDC_STATIC,13,13,77,10
+    EDITTEXT        IDC_EDIT2,13,48,99,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 172, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Macros"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,110,162,50,14
+    GROUPBOX        "Macros",IDC_STATIC,7,7,158,150
+    LTEXT           "Macro 1 :",IDC_M1,13,32,121,11,NOT WS_GROUP
+    LTEXT           "Macro 2 :",IDC_M2,13,43,122,11,NOT WS_GROUP
+    LTEXT           "Macro 3 :",IDC_M3,13,55,124,11,NOT WS_GROUP
+    LTEXT           "Macro 4 :",IDC_M4,13,67,124,11,NOT WS_GROUP
+    LTEXT           "Macro 8 :",IDC_M8,13,115,123,11,NOT WS_GROUP
+    LTEXT           "Macro 5 :",IDC_M5,13,79,124,11,NOT WS_GROUP
+    LTEXT           "Macro 6 :",IDC_M6,13,91,124,11,NOT WS_GROUP
+    LTEXT           "Macro 7 :",IDC_M7,13,103,124,11,NOT WS_GROUP
+    LTEXT           "Macro 9 :",IDC_M9,13,128,123,11,NOT WS_GROUP
+    LTEXT           "Macro 10 :",IDC_M10,13,139,124,11,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT1,52,29,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,52,41,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,52,53,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,52,65,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,52,77,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,52,89,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,52,101,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,52,113,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,52,125,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,52,137,108,13,ES_AUTOHSCROLL
+    CONTROL         "Send <CR> after macro",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,161,90,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 269
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG1 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_COMBO1, 0x403, 19, 0
+0x3432, 0x3030, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 
+"\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO1, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    IDC_COMBO1, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO1, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO1, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO1, 0x403, 154, 0
+0x3131, 0x3235, 0x3030, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 
+0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 
+0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 
+0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 
+0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 
+0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 
+0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 
+0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 
+0x2020, 0x2020, 0x2020, 0x2020, 0x0020, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\simulator3.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 20, 22
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_ASCII
+    BUTTON      ID_HEXA
+    BUTTON      ID_DECIMAL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Find\tCtrl+F",               ID_EDIT_FIND
+        MENUITEM "&Replace\tCtrl+R",            ID_EDIT_REPLACE
+        MENUITEM "Repeat\tF3",                  ID_EDIT_REPEAT
+        MENUITEM "Select All\tCtrl+A",          ID_EDIT_SELECT_ALL
+    END
+    POPUP "&Settings"
+    BEGIN
+        MENUITEM "Com port",                    ID_SETTINGS
+        MENUITEM "Macros",                      ID_SETTINGS_PROTOCOL
+    END
+    POPUP "Send"
+    BEGIN
+        MENUITEM "Macro 1\tCtrl+F1",            ID_SEND_MACRO1, GRAYED
+        MENUITEM "Macro 2\tCtrl+F2",            ID_SEND_MACRO2, GRAYED
+        MENUITEM "Macro 3\tCtrl+F3",            ID_SEND_MACRO3, GRAYED
+        MENUITEM "Macro 4\tCtrl+F4",            ID_SEND_MACRO4, GRAYED
+        MENUITEM "Macro 5\tCtrl+F5",            ID_SEND_MACRO5, GRAYED
+        MENUITEM "Macro 6\tCtrl+F6",            ID_SEND_MACRO6, GRAYED
+        MENUITEM "Macro 7\tCtrl+F7",            ID_SEND_MACRO7, GRAYED
+        MENUITEM "Macro 8\tCtrl+F8",            ID_SEND_MACRO8, GRAYED
+        MENUITEM "Macro 9\tCtrl+F9",            ID_SEND_MACRO9, GRAYED
+        MENUITEM "Macro 10\tCtrl+F10",          ID_SEND_MACRO10, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Send file\tCtrl+F11",         ID_SEND_SENDHEXFILE, GRAYED
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Splitter",                    ID_WINDOW_SPLIT
+        MENUITEM SEPARATOR
+        MENUITEM "ASCII table",                 ID_VIEW_ASCIITABLE
+        MENUITEM SEPARATOR
+        MENUITEM "Decimal",                     ID_VIEW_DECIMAL
+        MENUITEM "Hexa",                        ID_VIEW_HEXA
+        MENUITEM "Ascii",                       ID_VIEW_ASCII, CHECKED
+    END
+    POPUP "About"
+    BEGIN
+        MENUITEM "Aplication info",             ID_ABOUT_APLICATIONINFO
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL
+    "R",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL
+    "3",            ID_EDIT_REPEAT,         VIRTKEY 
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL
+    "1",            ID_INPUTS_MUNZKASSETTE, VIRTKEY, CONTROL
+    "2",            ID_INPUTS_ALARMSCHALTER, VIRTKEY, CONTROL
+    "3",            ID_INPUTS_AUSZUGBNP,    VIRTKEY, CONTROL
+    "4",            ID_INPUTS_RESTGELDWAGEN, VIRTKEY, CONTROL
+    "5",            ID_INPUTS_TURKONTAKT,   VIRTKEY, CONTROL
+    "6",            ID_INPUTS_RIEGELSTANGE, VIRTKEY, CONTROL
+    "7",            ID_INPUTS_BNP,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_SEND_MACRO1,         VIRTKEY, CONTROL
+    VK_F2,          ID_SEND_MACRO2,         VIRTKEY, CONTROL
+    VK_F3,          ID_SEND_MACRO3,         VIRTKEY, CONTROL
+    VK_F4,          ID_SEND_MACRO4,         VIRTKEY, CONTROL
+    VK_F5,          ID_SEND_MACRO5,         VIRTKEY, CONTROL
+    VK_F6,          ID_SEND_MACRO6,         VIRTKEY, CONTROL
+    VK_F7,          ID_SEND_MACRO7,         VIRTKEY, CONTROL
+    VK_F8,          ID_SEND_MACRO8,         VIRTKEY, CONTROL
+    VK_F9,          ID_SEND_MACRO9,         VIRTKEY, CONTROL
+    VK_F10,         ID_SEND_MACRO10,        VIRTKEY, CONTROL
+    VK_F11,         ID_SEND_SENDHEXFILE,    VIRTKEY, CONTROL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "S&B"
+            VALUE "FileDescription", "Alarm simulator MFC"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "simulator3"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "simulator3.EXE"
+            VALUE "ProductName", "Alarm simulator"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG4 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "simulator3\n\nSimula\n\n\nSimulator3.Document\nSimula Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "simulator3"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+    IDS_NO_COM_PORT         "No Com port available."
+    IDS_ERROR_WRITE         "Error writting to Com port."
+END
+
+STRINGTABLE
+BEGIN
+    ID_SETTINGS_COMPORT     "Com Port settings"
+    ID_SETTINGS             "Com port settings"
+    ID_BUTTON32777          "Münzkassette"
+    ID_BUTTON32778          "Alarm Schalter"
+    ID_BUTTON32779          "Auszug Bnp"
+    ID_BUTTON32780          "Restgeldwagen"
+    ID_BUTTON32781          "Türkontakt"
+    ID_BUTTON32782          "Riegelstange"
+    ID_BUTTON32783          "Bnp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TUR_KONTAKT          "Türkontakt"
+    ID_ALARMSCHALTER        "Alarm Schalter"
+    ID_AUSZUGBNP            "Auszug Bnp"
+    ID_RESTGELDWAGEN        "Restgeldwagen"
+    ID_TURKONTAKT           "Türkontakt"
+    ID_RIEGELSTANGE         "Riegelstange"
+    ID_BNP                  "Bnp"
+    ID_MUNZKASSETTE         "Munzkassette"
+    ID_SETTINGS_SPLITTER    "Change the splitter of the windows"
+    ID_INPUTS_MUNZKASSETTE  "Cassette for coins"
+    ID_INPUTS_ALARMSCHALTER "Alarm enable/disable"
+    ID_INPUTS_AUSZUGBNP     "Banknotes"
+    ID_INPUTS_RESTGELDWAGEN "Trolley for coins"
+    ID_INPUTS_TURKONTAKT    "Door contact "
+END
+
+STRINGTABLE
+BEGIN
+    ID_INPUTS_BNP           "Banknotes"
+    ID_MENU_MUNZKASSETTE    "Coin cassette"
+    ID_MENU_ALARMSCHALTER   "Alarm enable/disable"
+    ID_KALENDAR             "Calendar"
+    ID_VIEW_ASCIITABLE      "View ASCII table"
+    ID_ABOUT_APLICATIONINFO "About aplication"
+    ID_VIEW_DECIMAL         "Decimal"
+    ID_VIEW_HEXA            "Hexa"
+    ID_VIEW_ASCII           "ASCII"
+    ID_ASCII                "ASCII"
+    ID_BUTTON32812          "Hexa"
+    ID_DECIMAL              "Decimal"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SETTINGS_PROTOCOL    "User macros settings"
+    ID_SEND_MACRO1          "Send Macro 1"
+    ID_SEND_MACRO2          "Send Macro 2"
+    ID_SEND_MACRO3          "Send Macro 3"
+    ID_SEND_MACRO4          "Send Macro 4"
+    ID_SEND_MACRO5          "Send Macro 5"
+    ID_SEND_MACRO6          "Send Macro 6"
+    ID_SEND_MACRO7          "Send Macro 7"
+    ID_SEND_MARCO8          "Send Macro 8"
+    ID_SEND_MARCO9          "Send Macro 9"
+    ID_SEND_MACRO10         "Send Macro 10"
+    ID_SEND_MACRO9          "Send Macro 9"
+    ID_SEND_MACRO8          "Send Macro 8"
+    ID_SEND_INPUTSREQUEST   "Send request for input events"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SEND_INPUTREQUEST    "Send request for input events"
+    ID_SEND_CLOCKSYNCHRONIZATION "Send time_t structure"
+    ID_SEND_RESPONSEACK     "Send ACK response"
+    ID_SEND_RESPONSENACK    "Send NACK response"
+    ID_SEND_WRONGINPUTREQUEST "Send bad length"
+    ID_SEND_WRONGCLOCKSYNCHRONIZATION "Send Clock with length error"
+    ID_SETTINGS_TIMECONVERT "Convert Time_t to localtime"
+    ID_SEND_SENDHEXFILE     "Send file"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SBLOGO              BITMAP                  "res\\sblogo.bmp"
+
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\simulator3.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "afxres.rc"         // Standardkomponenten
+#include "afxprint.rc"       // Ressourcen für Drucken/Seitenansicht
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
