@@ -15,7 +15,7 @@ class CSimulator3View :	public CEditView
 {
 private:
 	CRect m_rectPrint;
-	
+	CFont m_Font;
 protected: // Nur aus Serialisierung erzeugen
 	
 // Attribute

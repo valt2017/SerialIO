@@ -12,11 +12,12 @@
 
 class CMyView : public CEditView
 {
-	
+private:
+	CFont m_Font;
+
 protected:
 //	CMyView();           // Dynamische Erstellung verwendet geschützten Konstruktor
 //	DECLARE_DYNCREATE(CMyView)
-	
 // Attribute
 public:
 	
@@ -46,6 +47,8 @@ protected:
 	afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags);
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
+public:
+	virtual void OnInitialUpdate();
 };
 
 /////////////////////////////////////////////////////////////////////////////

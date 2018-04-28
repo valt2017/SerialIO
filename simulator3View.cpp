@@ -39,6 +39,7 @@ CSimulator3View::CSimulator3View()
 
 CSimulator3View::~CSimulator3View()
 {
+	m_Font.DeleteObject();
 }
 
 BOOL CSimulator3View::PreCreateWindow(CREATESTRUCT& cs)
@@ -81,7 +82,10 @@ CSimulator3Doc* CSimulator3View::GetDocument() // Die endgültige (nicht zur Fehl
 void CSimulator3View::OnInitialUpdate() 
 {
 	CEditView::OnInitialUpdate();
-	
+	// Creates a font
+	m_Font.CreatePointFont(theApp.iFontSize, _T("Consolas"));
+	// With a member variable associated to the static control
+	SetFont(&m_Font);
 }
 
 void CSimulator3View::OnPrint(CDC* pDC, CPrintInfo* pInfo) 

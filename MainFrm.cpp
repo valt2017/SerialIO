@@ -687,7 +687,9 @@ void CMainFrame::vSaveConfig(CString csIniFile)
 	buffer.Insert(0,theApp.ComPort.GetCOMStopB());
 	WritePrivateProfileString("PORT","Stopbit",buffer,csIniFile);
 	//APPLICATION
-
+	buffer.Empty();
+	buffer.Format("%d", theApp.iFontSize);
+	WritePrivateProfileString("APPLICATION","Font",buffer,csIniFile);
 	//MACROS
 	for (int i = 0; i < theApp.Macros.GetCount(); i++)
 	{
@@ -705,6 +707,7 @@ void CMainFrame::vLoadConfig(CString csIniFile)
 	const int BUF_SIZE = 100;
 	char buffer[BUF_SIZE];
 	//APPLICATION
+	theApp.iFontSize =	GetPrivateProfileInt("APPLICATION", "Font", 100, csIniFile);
 	//COMPORT
 	GetPrivateProfileString("PORT","Comport","COM1",buffer,5,csIniFile);
 	theApp.ComPort.SetCOMPort(buffer);
@@ -719,7 +722,6 @@ void CMainFrame::vLoadConfig(CString csIniFile)
 	//buffer.Empty();
 	//buffer.Insert(0, theApp.ComPort.GetCOMStopB());
 	//WritePrivateProfileString("PORT", "Stopbit", buffer, csIniFile);
-	
 	theApp.Macros.SetSize(10);
 
 	for (int i = 0; i < theApp.Macros.GetCount(); i++)

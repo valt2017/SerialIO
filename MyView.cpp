@@ -24,6 +24,7 @@ CMyView::CMyView()
 
 CMyView::~CMyView()
 {
+	m_Font.DeleteObject();
 }
 
 
@@ -72,4 +73,14 @@ void CMyView::OnChar(UINT nChar, UINT nRepCnt, UINT nFlags)
 		CEditView::OnChar(nChar, nRepCnt, nFlags);
 		theApp.ComPort.SendChar(nChar);
 	}
+}
+
+
+void CMyView::OnInitialUpdate()
+{
+	CEditView::OnInitialUpdate();
+	// Creates a font
+	m_Font.CreatePointFont(theApp.iFontSize, _T("Consolas"));
+	// With a member variable associated to the static control
+	SetFont(&m_Font);
 }

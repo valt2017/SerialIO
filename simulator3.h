@@ -37,7 +37,7 @@ public:
 	CString			csTimeStamp;
 	CString			csOldPort;
 	CString			csDefaultIniFilePath;
-
+	int				iFontSize;
 	int				iInterval;
 
 // Überladungen
